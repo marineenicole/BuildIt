@@ -1,0 +1,325 @@
+/*
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-template/
+  Author: BootstrapMade
+  Author URL: https://bootstrapmade.com
+*/
+
+/* 
+
+https://www.color-hex.com/color-palette/108233
+
+*/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+
+    color: #000;
+}
+
+a {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight:400;
+  margin: 0 0 30px 0;
+}
+
+/*--------------------------------------------------------------
+# General - Common Sections
+--------------------------------------------------------------*/
+.section-title {
+  font-size: 32px;
+  color: #000;
+  text-shadow: 1px 1px 3px #000;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-description {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.section-title-divider {
+  width: 50px;
+  height: 3px;
+  background: #FF9040;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Welcome Section
+--------------------------------------------------------------*/
+#hero {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/building.jpg) top center fixed;
+  background-size: cover;
+}
+
+#hero .hero-logo {
+  margin: 20px;
+}
+
+#hero .hero-logo i {
+  font-size: 10vh;
+  color: #ffffff;
+  padding: 50px;
+  border:  solid #fff;
+  box-shadow: 1px 1px 2px #000;
+  border-radius: 50%;
+  text-shadow: 1px 1px 2px #000;
+  background: rgb(0,0,0,0);
+}
+
+#hero .hero-container {
+  background: linear-gradient(rgb(255,255,255,0.1), rgb(77,94,128, 0.9));
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 700px;
+  line-height: 75px;
+  text-transform: uppercase;
+  color: #fff; 
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 50px; 
+}
+/* Fix this */
+#hero .rotating > .animated {
+  display: inline-block;
+}
+
+#hero .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+/* Fix this */
+
+#hero .btn {
+  background:#FF9040;
+  border:2px solid;
+}
+
+#hero .btn:hover {
+  background: rgb(255,255,255,0);
+  border:2px solid #fff;
+  color:#fff
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about {
+  padding: 80px 0;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+#services {
+  background: linear-gradient(rgb(255,255,255,0.1), rgb(77,94,128, 0.9)),
+    url(../images/construction1.jpg) fixed center center;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+
+  text-shadow: 1px 1px 2px #000;
+
+}
+
+#services .build-color {
+  color:#FF9040;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#services .service-item {
+  padding: 15px;
+}
+
+#services .service-item:hover {
+  background-color: rgb(0,0,0,0.5);
+  border: solid #000;
+}
+
+#services .service-item:hover h4,
+#services .service-item:hover i,
+#services .service-item:hover p {
+  color:#FF9040;
+
+}
+
+
+#services i {
+  color:#000;
+  font-size: 3vh;
+  float: left;
+  padding-right: 15px;
+}
+
+#services .service-title {
+  color:#000;
+  font-size: 2vw;
+
+  margin-left:45px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+#services .service-description {
+  color:#000;
+
+  margin-left:50px;
+
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+#gallery {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+#gallery .gallery-item {
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 260px;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#gallery .details {
+  height: 260px;
+  display: table-cell;
+  vertical-align: middle;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+
+  font-weight: 700;
+
+}
+
+#gallery .details:hover {
+  background: rgb(0,0,0,0.5);
+  opacity: 1;
+
+}
+
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#contact {
+  background: #4d5e80;
+  color:#FF9040;
+  padding: 80px 0;
+}
+
+#contact i {
+  font-size: 32px;
+  float: left;
+  padding-right: 30px;
+}
+
+#contact p {
+  line-height: 24px;
+  font-weight: 600;
+
+}
+
+#contact .form input, #contact .form textarea  {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#contact .form button[type="submit"] {
+  background: #FF9040;
+  border: solid;
+  padding: 10px 24px;
+  text-transform: uppercase;
+}
+
+/* Link w/ php: #contact .form #sendmessage and #errormessage */
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #FF9040;
+  padding: 30px 0;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Smaller Screens
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+
+  /* Hero */
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  #hero h2 .rotating {
+    display: block;
+  }
+
+  /* Services */
+  #services .service-title {
+    font-size: 28px;
+  }
+
+  /* Contact */
+  #contact .info {
+    padding: 0 0 10px 10px;
+  }
+}
