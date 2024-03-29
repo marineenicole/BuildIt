@@ -143,6 +143,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.navbar {
+  
+  padding: 3% 10%;
+  background-color:#000;
+}
+
+.navbar img:hover {
+  filter: brightness(0) invert(1);
+}
+
+.navbar a, .navbar button {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7f7f7;
+
+}
+
+.navbar a:hover, .navbar button:hover {
+  color: #FF9040;
+
+}
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 #about {
@@ -288,10 +313,18 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-  background: #FF9040;
-  padding: 30px 0;
-  color: #fff;
+footer {
+  padding: 80px 0;
+
+}
+
+footer a {
+  color: #FF9040;
+}
+
+footer .col-md-4 {
+  border: solid #000;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
