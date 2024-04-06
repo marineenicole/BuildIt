@@ -1,0 +1,369 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  background: #fff;
+
+    color: #000;
+}
+
+a {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight:400;
+  margin: 0 0 30px 0;
+}
+
+/*--------------------------------------------------------------
+# General - Common Sections
+--------------------------------------------------------------*/
+.section-title {
+  font-size: 32px;
+  color: #000;
+  text-shadow: 1px 1px 3px #000;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+.section-description {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.section-title-divider {
+  width: 50px;
+  height: 3px;
+  background: #FF9040;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Welcome Section
+--------------------------------------------------------------*/
+#hero {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1536895058696-a69b1c7ba34f?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) top center fixed;
+  background-size: cover;
+}
+
+#hero .hero-logo {
+  margin: 20px;
+}
+
+#hero .hero-logo i {
+  font-size: 10vh;
+  color: #ffffff;
+  padding: 50px;
+  border:  solid #fff;
+  box-shadow: 1px 1px 2px #000;
+  border-radius: 50%;
+  text-shadow: 1px 1px 2px #000;
+  background: rgb(0,0,0,0);
+}
+
+#hero .hero-container {
+  background: linear-gradient(rgb(255,255,255,0.1), rgb(77,94,128, 0.9));
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 700px;
+  line-height: 75px;
+  text-transform: uppercase;
+  color: #fff; 
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 50px;
+  text-transform: uppercase; 
+}
+
+#hero .rotating{
+  color: #FF9040;
+  text-shadow: 1px 1px 2px #000;
+  text-transform: capitalize;
+  animation: slideIn 0.5s ease-in-out;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#hero .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+/* Fix this */
+
+#hero .btn {
+  background:#FF9040;
+  border:2px solid;
+}
+
+#hero .btn:hover {
+  background: rgb(255,255,255,0);
+  border:2px solid #fff;
+  color:#fff
+}
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.navbar {
+  
+  padding: 3% 10%;
+  background-color:#000;
+}
+
+.navbar img:hover {
+  filter: brightness(0) invert(1);
+}
+
+.navbar a, .navbar button {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7f7f7;
+
+}
+
+.navbar a:hover, .navbar button:hover {
+  color: #FF9040;
+
+}
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about {
+  padding: 80px 0;
+}
+
+#about .about-title {
+  text-transform: uppercase;
+font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+#services {
+  background: linear-gradient(rgb(255,255,255,0.1), rgb(77,94,128, 0.9)),
+    url(https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) fixed center center;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+
+  text-shadow: 1px 1px 2px #000;
+
+}
+
+#services .build-color {
+  color:#FF9040;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#services .service-item {
+  padding: 15px;
+}
+
+#services .service-item:hover {
+  background-color: rgb(0,0,0,0.5);
+  border: solid #000;
+}
+
+#services .service-item:hover h4,
+#services .service-item:hover i,
+#services .service-item:hover p {
+  color:#FF9040;
+
+}
+
+
+#services i {
+  color:#000;
+  font-size: 3vh;
+  float: left;
+  padding-right: 15px;
+}
+
+#services .service-title {
+  color:#000;
+  font-size: 2vw;
+
+  margin-left:45px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+#services .service-description {
+  color:#000;
+
+  margin-left:50px;
+
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+#gallery {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+#gallery .gallery-item {
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 260px;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#gallery .details {
+  height: 260px;
+  display: table-cell;
+  vertical-align: middle;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+
+  font-weight: 700;
+
+}
+
+#gallery .details:hover {
+  background: rgb(0,0,0,0.5);
+  opacity: 1;
+
+}
+
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+#contact {
+  background: #4d5e80;
+  color:#FF9040;
+  padding: 80px 0;
+}
+
+#contact i {
+  font-size: 32px;
+  float: left;
+  padding-right: 30px;
+}
+
+#contact p {
+  line-height: 24px;
+  font-weight: 600;
+
+}
+
+#contact .form input, #contact .form textarea  {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#contact .form button[type="submit"] {
+  background: #FF9040;
+  border: solid;
+  padding: 10px 24px;
+  text-transform: uppercase;
+}
+
+/* Link w/ php: #contact .form #sendmessage and #errormessage */
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  padding: 80px 0;
+  background: #000;
+
+}
+
+footer a {
+  color: #FF9040;
+}
+
+footer .col-md-4 {
+ 
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+/*--------------------------------------------------------------
+# Smaller Screens
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+
+  /* Hero */
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  #hero h2 .rotating {
+    display: block;
+    margin-top: 10px;
+  }
+
+  /* Services */
+  #services .service-title {
+    font-size: 28px;
+  }
+
+  /* Contact */
+  #contact .info {
+    padding: 0 0 10px 10px;
+  }
+}
