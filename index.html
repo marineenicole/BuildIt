@@ -3,43 +3,466 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuildIt</title>
+    <title>BuildIt Construction</title>
 
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- add favicons -->
+    <link rel="icon" href="assets/images/favicon-icon.png">
     <!-- add vendor files
      -->
+     <script src="https://kit.fontawesome.com/075cc5936b.js" crossorigin="anonymous"></script>
+
+
+     <!-- Main CSS -->
+     <link rel="stylesheet" href="assets/css/style.css">
+
+     <script src="./assets/app.js"></script>
 </head>
 <body>
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container">
-            <div class="wow fadeIn">
+            <div>
                 <div class="hero-logo">
-                    <i class="fa-solid fa-hammer"></i>
+                    <i class="fa-solid fa-helmet-safety"></i>
                 </div>
 
-                <h1>Welcome to BuildIt</h1>
-                <h2>We focus on<span class="rotating">rhythm, relaxation, connection, impulsion, straightness, collection</span></h2>
+                <h1>Welcome to BuildIt Construction Services</h1>
+                <h2>
+                    Specializing in 
+                    <div class="rotating-container">
+                        <span class="rotating" id="rotating">Building Dreams</span>
+                    </div>
+                </h2>
                 <div class="actions">
-                    <a href="#about" class="btn-get-started">Get Started</a>
-                    <a href="#services" class="btn-services">Our Services</a>
+                    <a href="#about" class="btn">Get Started</a>
+                    <a href="#services" class="btn">Our Services</a>
                 </div>
             </div>
         </div>
     </section>
-  <!-- ======= End Hero Section ======= -->
+
+
+    <!-- ======= NAVBAR Section ======= -->
+    <nav class="navbar navbar-expand-md sticky-top">
+        <a href="#hero" class="navbar-brand mx-5">
+            <img src="./assets/images/favicon-logo-orange.png" alt="logo" height="60" width="auto">
+        </a>
+        <!-- Toggler Button-->
+        <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarItem" 
+                aria-controls="navbarItem" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- NAVBAR Collapse -->
+        <div class="collapse navbar-collapse" id="navbarItem">
+            <div class="container-fluid">
+
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </li>
 
 
 
+            </ul>
+        </div>
+        </div>
 
-    <h1>You design it; We BUILD IT</h1>
-  
-    
-<!-- Bootstrap -->
+        
+    </nav>
+
+    <!-- ======= End NAVBAR Section ======= -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">About Us</h3>
+                    <div class="section-title-divider"></div>
+                    <p class="section-description">
+                        BuildIt is a premier construction company dedicated to shaping urban environments and communities.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container  ">
+                <div class="row">
+                    
+                    <div>
+                        <h2 class="about-title">Constructing the Urban Future</h2>
+                        <p class="about-text">
+                            We specialize in innovative and sustainable solutions for cityscapes, 
+                            focusing on creating spaces that enhance community pride and quality of life. 
+                            Our projects range from eco-friendly residential buildings to state-of-the-art 
+                            commercial developments, all designed with a meticulous attention to detail 
+                            and a commitment to excellence.
+                        </p>
+
+                        <p class="about-text">
+                            With a team of experienced professionals and a passion for urban development, 
+                            we are proud to be at the forefront of constructing the urban future.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+        <div class="container  ">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Our Promise</h3>
+                    <div class="section-title-divider"></div>
+                    <p class="section-description">You Design It, We <b class="build-color">Build It.</b>
+                        <br><br>Construction is our passion and our focus. </p>
+                </div>               
+            </div>
+
+            <!-- Grid -->
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-md-4 service-item">
+                    <i class="fa-solid fa-hammer"></i>
+                    <h4 class="service-title">Construction</h4>
+                    <p class="service-description"> 
+                        Planning, coordinating, and executing building projects, 
+                        including site preparation, foundation work, framing, roofing, 
+                        and finishing.
+                    </p>
+                </div>
+
+                <div class="col-md-4 service-item">
+                    <i class="fa-solid fa-hammer"></i>
+                    <h4 class="service-title">Welding</h4>
+                    <p class="service-description">
+                        Joining materials using heat and pressure, commonly used in 
+                        construction for structural components and metal fabrication.
+                    </p>
+                </div>
+
+                <div class="col-md-4 service-item">
+                    <i class="fa-solid fa-hammer"></i>
+                    <h4 class="service-title">Plumbing</h4>
+                    <p class="service-description">
+                        Installing and maintaining water supply, heating, and 
+                        sanitation systems, including pipes, fixtures, and fittings.
+                    </p>
+                </div>
+
+                <div class="col-md-4 service-item">
+                    <i class="fa-solid fa-hammer"></i>
+                    <h4 class="service-title">HVAC</h4>
+                    <p class="service-description"> 
+                        Installing and maintaining systems that control indoor environmental 
+                        conditions, such as temperature, humidity, and air quality.
+                    </p>
+                </div>
+
+                <div class="col-md-4 service-item">
+                    <i class="fa-solid fa-hammer"></i>
+                    <h4 class="service-title">Landscaping</h4>
+                    <p class="service-description">
+                        Designing, installing, and maintaining outdoor areas around 
+                        buildings, including plants, hardscaping, and irrigation systems.
+                    </p>
+                </div>
+
+                <div class="col-md-4 service-item">
+                    <i class="fa-solid fa-hammer"></i>
+                    <h4 class="service-title">Demolition</h4>
+                    <p class="service-description">
+                        Dismantling and removing structures or buildings, requiring careful 
+                        planning and execution for safety and proper disposal of materials.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Gallery</h3>
+                    <div class="section-title-divider"></div>
+                    <div class="section-description">See Below some of our work</div>
+                </div>
+            </div>
+            
+            <!-- Grid -->
+            <div class="row">
+
+                <!-- Picture 1 -->
+                <div class="col-md-4 3">
+                    <a class="gallery-item" 
+                    href="https://unsplash.com/photos/man-in-yellow-shirt-and-blue-denim-jeans-jumping-on-brown-wooden-railings-under-blue-and-X1P1_EDNnok?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
+                    target="_blank"
+                    style="background-image: url(https://images.unsplash.com/photo-1587582423116-ec07293f0395?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+                        <div class="details">
+                            <span>Photo by Josh Olalde on Unsplash</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Picture 2 -->
+                <div class="col-md-4 3">
+                    <a class="gallery-item" 
+                        href="https://unsplash.com/photos/man-in-blue-denim-jeans-and-blue-denim-jacket-standing-on-orange-metal-bar-during-daytime-niSnhfMjiMI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        target="_blank"
+                        style="background-image: url(https://images.unsplash.com/photo-1593313637552-29c2c0dacd35?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                        background-position: 50% 15%;">
+                        
+                        <div class="details">
+                            <span>Photo by Jeriden Villegas on Unsplash</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Picture 3 -->
+                <div class="col-md-4 3">
+                    <a class="gallery-item" 
+                        href="https://unsplash.com/photos/people-working-on-building-during-daytime-qvBYnMuNJ9A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        target="_blank"
+                        style="background-image: url(https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1097&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+                        
+                        <div class="details">
+                            <span>Photo by Josue Isai Ramos Figueroa on Unsplash</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Picture 4 -->
+                <div class="col-md-4 3">
+                    <a class="gallery-item" 
+                        href="https://unsplash.com/photos/man-doing-welding-on-outdoors-sTw2KYpoujk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        target="_blank"
+                        style="background-image: url(https://images.unsplash.com/photo-1527199768775-bdabf8b32f61?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+                        
+                        <div class="details">
+                            <span>Photo by Anthony Fomin on Unsplash</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Picture 5 -->
+                <div class="col-md-4 3">
+                    <a class="gallery-item" 
+                        href="https://unsplash.com/photos/man-wearing-orange-shirt-aBV8pVODWiM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        target="_blank"
+                        style="background-image: url(https://images.unsplash.com/photo-1561343228-e6a5c693d352?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+                        
+                        <div class="details">
+                            <span>Photo by Dean Bennett on Unsplash</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Picture 6 -->
+                <div class="col-md-4 3">
+                    <a class="gallery-item" 
+                        href="https://unsplash.com/photos/white-and-gray-dumpy-level-G-YbAOA6qqQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        target="_blank"
+                        style="background-image: url(https://images.unsplash.com/photo-1545186070-de624ed19875?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+                        
+                        <div class="details">
+                            <span>Photo by Morgan Von Gunten on Unsplash</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Picture 7 -->
+                <div class="col-md-4 3">
+                    <a class="gallery-item" 
+                        href="https://unsplash.com/photos/brown-metal-machine-on-brown-soil-during-daytime-O7ZsV1kioMs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        target="_blank"
+                        style="background-image: url(https://images.unsplash.com/photo-1603816886392-25f1d28406d9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                        background-position: 50% 60%;">
+                        
+                        <div class="details">
+                            <span>Photo by Jason Jarrach on Unsplash</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Picture 8 -->
+                <div class="col-md-4 3">
+                    <a class="gallery-item" 
+                        href="https://unsplash.com/photos/man-on-ladder-welding-post-QzP1GcDOSC8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        target="_blank"
+                        style="background-image: url(https://images.unsplash.com/photo-1508188609340-e8068b599193?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+                        
+                        <div class="details">
+                            <span>Photo by Max LaRochelle on Unsplash</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Picture 9 -->
+                <div class="col-md-4 3">
+                    <a class="gallery-item" 
+                        href="https://unsplash.com/photos/3-men-in-white-and-orange-shirts-and-green-pants-action-figures-tv7GF92ZWvs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                        target="_blank"
+                        style="background-image: url(https://images.unsplash.com/photo-1625470496744-a01bf36a262f?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+                        
+                        <div class="details">
+                            <span>Photo by Mathieu Stern on Unsplash</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+
+        <div class="container  ">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">Contact Us</h3>
+                    <div class="section-title-divider"></div>
+                    <p class="section-description">Contact us for more information.</p>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- Left -->
+                <div class="col-md-4 col-md-push-2">
+                    <div class="info">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>123 Street Address,<br>City, ST 12345</p>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>(555) 555 - 5555</p>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>example@email.com</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-5 col-md-8">
+                    <div class="form">
+                        <form action="forms/contact.php" method="POST" class="php-email-form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <input type="subject" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <textarea name="message" class="form-control" rows="5"  placeholder="Enter Message" required></textarea>
+                        </div>
+                        <div class="text-center mt-3">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+
+                    <p>
+                        <a href="#hero">Home</a><br>
+                        <a href="#about">About</a><br>
+                        <a href="#services">Services</a><br>
+                        <a href="#contact">Contact Us</a> <br>  
+                    </p>
+
+                    <p>Inspired by Bootstrap <a href="https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/" target="_blank"> Imperial</a></p>
+                    
+                </div>
+
+                <div class="col-md-4">
+
+                    <h5>Credits:</h5>
+                    <p>
+                        Hero Photo by <a href="https://unsplash.com/photos/in-progress-building-structure-photo-j7q-Z9DV3zw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Nathan Waters</a> on Unsplash
+
+                        <br><br>
+                        Services Photo by <a href="https://unsplash.com/photos/man-in-orange-and-black-vest-wearing-white-helmet-holding-yellow-and-black-power-tool-VLPUm5wP5Z0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Jeriden Villegas</a> on Unsplash
+                        <br><br>
+                        <a target="_blank" href="https://icons8.com/icon/77966/worker">Worker</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </p>
+
+                    <p>
+                    </p>
+
+                    
+                </div>
+
+                <div class="col-md-4">
+
+
+                    <p>
+                        All content is for demonstration purposes only.
+                        <br><br>
+                        This is a fictional company website created to showcase skills. 
+                        <br><br>
+                        
+                        &copy; 2024 BuildIt. All rights reserved.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- Fontawesomne -->
 <script src="https://kit.fontawesome.com/075cc5936b.js" crossorigin="anonymous"></script>
